@@ -6,3 +6,104 @@ dark-blue - #134d71;
 white - #ffffff;
 black - #000000;
 */
+* {
+  font-family: 'Quicksand', sans-serif;
+}
+
+body {
+  background: linear-gradient(0deg, rgba(225, 218, 192, 1) 0%, rgba(19, 77, 113, 1) 100%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+
+}
+
+.self-care {
+  display: flex;
+  padding: 30px;
+  justify-content: center;
+  color: white;
+  filter: drop-shadow(0 0 0.74rem yellow);
+}
+
+h2 {
+  padding-top: 30px;
+  color: white;
+  text-align: center;
+  justify-content: center;
+
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.selector-btn {
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  font-style: italic;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 15px;
+  width: 500px;
+  padding: 15px;
+
+}
+
+.recieve {
+  text-align: center;
+}
+
+button {
+  background-color: #134D71;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 20px;
+  width: 250px;
+  filter: drop-shadow(0 0 0.74rem yellow);
+
+}
+
+.result {
+  border-radius: 15px;
+  display: flex;
+  padding: 40px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+img {
+  background-color: white;
+  padding: 50px;
+  border-radius: 15px;
+}
+
+.text-box {
+font-size: 27px;
+font-family: 'Quicksand', sans-serif;
+padding: 37px;
+width: 400px;
+text-align: center;
+background-color: white;
+border-radius: 15px;
+height: auto;
+
+}
+
+.delete {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+}
+.hidden {
+  display: none;
+}
