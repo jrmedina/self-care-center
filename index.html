@@ -2,12 +2,23 @@
 <html lang="en">
 
 <head>
+  
   <title>✨ Self Care ✨</title>
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <section class="audioSection">
+    <audio id="audio">
+      <source src="assets/Yellow-Bird.mp3"  type="audio/mpeg"/>
+    </audio>
+    
+    <button class="play" id="play">&#9658; play
+    
+    </button>
+  </section>
   <header class="self-care">
+
     <h1>
       <span style="--i:1;">✨</span>
       <span style="--i:2;">S</span>
@@ -40,7 +51,7 @@
       </input>
       <br>
       <br>
-      <button type="button">Recieve Message
+      <button class="submit" type="button">Recieve Message
       </button>
     </div>
   </section>
@@ -54,3 +65,4 @@
 <script type="text/javascript" src="main.js"></script>
 <script src="data.js"></script>
 </html>
+

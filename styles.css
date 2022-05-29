@@ -3,19 +3,41 @@
 }
 
 body {
-  background: linear-gradient(0deg, rgba(225, 218, 192, 1) 0%, rgba(19, 77, 113, 1) 100%);
+  background: linear-gradient(0deg, rgba(225, 218, 192, 1) 0%, rgba(19, 118, 14, 0.796) 100%);
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
 }
 
 .self-care {
-  padding: 40px;
+  padding-top: 10px;
   position: relative;
-  -webkit-box-reflect: below -12px linear-gradient(transparent, rgba(0,0,0,0.2));
+  -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(0,0,0,0.2));
   text-align: center;
   filter: drop-shadow(0 0 0.74rem rgb(182, 182, 49)); */
   }
+
+  .audioSection {
+  display: flex;
+  justify-content: center;
+  background: url(assets/tropcal.jpeg);
+  background-size: cover;
+}
+
+.play {
+padding: 10px 25px;
+font-size: 30px;
+border: 0in;
+background-color: rgba(11, 93, 16, 0.326);
+color: rgb(255, 255, 255);
+}
+
+.play:hover{
+  box-shadow: inset 250px 0 0 0  hsla(117, 57%, 21%, 0.335);
+  cursor: pointer;
+  border-radius: 15px;
+}
+
   .self-care span {
     font-size: larger;
     position: relative;
@@ -42,7 +64,6 @@ h2 {
   color: white;
   text-align: center;
   justify-content: center;
-
 }
 
 .input {
@@ -50,8 +71,9 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
+
+
 
 .selector-btn {
   align-items: center;
@@ -63,10 +85,12 @@ h2 {
   border-radius: 15px;
   width: 500px;
   padding: 15px;
+
 }
 
-button {
-  background-color: #134D71;
+
+.submit {
+  background-color: #167113a2;
   color: white;
   text-align: center;
   padding: 10px;
@@ -78,14 +102,15 @@ button {
 }
 
 button:hover{
-  box-shadow: inset 250px 0 0 0  #4c4c6f;
+  box-shadow: inset 250px 0 0 0  hsla(131, 74%, 17%, 0.396);
   cursor: pointer;
+  transition:linear 0.8s
 }
 
 .result {
   border-radius: 15px;
   display: flex;
-  padding: 60px;
+  padding: 20px;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -94,7 +119,7 @@ button:hover{
 
 img {
   background-color: white;
-  padding: 50px;
+  padding: 40px;
   border-radius: 15px;
   -webkit-box-reflect: below -12px linear-gradient(transparent, rgba(0,0,0,0.4));text-align: center;
 }
@@ -112,9 +137,15 @@ height: auto;
 
 .clear {
   display: flex;
-  align-items: center;
   justify-content: center;
-  text-align: center;
+  background-color: #167113a2;
+  color: white;
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 20px;
+  width: 200px;
+  box-shadow: inset 0 0 0 0  #e7e7e944;
+  transition:linear 0.8s
 }
 
 .hidden {

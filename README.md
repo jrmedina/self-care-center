@@ -1,7 +1,7 @@
 # Self Care Center - Solo Challenge
 
 ## Deploy link
-
+https://jrmedina.github.io/self-care-center/
 
 ## Overview
 This Solo Challenge gives students and instructors the opportunity to get a pulse on where you are with the foundational concepts of Module 1 curriculum. Students should use this as an opportunity to challenge themselves and work completely independently. Google can (and probably should!) be used, but any other code base should not be referenced. Instructors will be able to use your work, both completion of functionality and code quality, to determine where you stand and if you are behind for this point in the module, provide supports to intervene.
