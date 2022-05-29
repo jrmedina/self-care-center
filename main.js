@@ -1,32 +1,33 @@
 var submitButton = document.querySelector("button")
-var affirmation = document.querySelector("#affirmation")
-var mantra = document.querySelector("#mantra")
-var bell = document.querySelector("#bell-image")
+var affirmationRadio = document.querySelector("#affirmation")
+var mantraRadio = document.querySelector("#mantra")
+var bellImage = document.querySelector("#bell-image")
 var textbox = document.querySelector(".text-box")
-var deleteButton = document.querySelector("#delete")
-var image = document.querySelector(".image")
-// E V E N T S //
+var clearButton = document.querySelector("#clear")
+
+// Event Listeners //
 submitButton.addEventListener('click', getInput)
-deleteButton.addEventListener('click', clearBox)
+clearButton.addEventListener('click', clearBox)
 
 
 function getInput() {
-  if (affirmation.checked === true) {
+  if (affirmationRadio.checked === true) {
     randomizeAffirmations()
-  } else if (mantra.checked === true) {
+  } else if (mantraRadio.checked === true) {
     randomizeMantras()
   } else {
-    alert(`Make a selection!`)
+    alert(`Hmmm.... 
+    Don't you want to make a selection?`)
   }
 }
 
   function clearBox() {
-  var toBeDeleted = textbox.innerText
-  alert(`"${toBeDeleted}" has been cleared! Please make another selection.`)
+  var toBeCleared = textbox.innerText
+  alert(`"${toBeCleared}" has been cleared! Please make another selection.`)
   textbox.innerText = ``
-  bell.classList.remove('hidden')
+  bellImage.classList.remove('hidden')
   textbox.classList.add('hidden')
-  deleteButton.classList.add('hidden')
+  clearButton.classList.add('hidden')
 }
 
 function randomizeAffirmations() {
@@ -42,7 +43,7 @@ function randomizeMantras() {
 }
 
 function showBox() {
-  bell.classList.add('hidden')
+  bellImage.classList.add('hidden')
   textbox.classList.remove('hidden')
-  deleteButton.classList.remove('hidden')
+  clearButton.classList.remove('hidden')
 }
