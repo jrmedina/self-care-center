@@ -1,11 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
-  </head>
-  <body>
-  
-    <script type="text/javascript" src="main.js"></script>
-  </body>
+
+<head>
+  <title>✨ Self Care ✨</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="self-care">
+    <h1>
+      <span style="--i:1;">✨</span>
+      <span style="--i:2;">S</span>
+      <span style="--i:3;">e</span>
+      <span style="--i:4;">l</span>
+      <span style="--i:5;">f</span>
+      <span style="--i:6;">C</span>
+      <span style="--i:7;">a</span>
+      <span style="--i:8;">r</span>
+      <span style="--i:9;">e</span>
+      <span style="--i:10;">C</span>
+      <span style="--i:11;">e</span>
+      <span style="--i:12;">n</span>
+      <span style="--i:13;">t</span>
+      <span style="--i:14;">e</span>
+      <span style="--i:15;">r</span>
+     <span style="--i:16;">✨</span>
+    </h1>
+  </header>
+  <section id="question">
+      <h2>
+        Which type of message?
+      </h2>
+  </section>
+  <Section class="input">
+    <div class="selector-btn">
+      <input id="affirmation" name="selection" type="radio" value="affirmations">affirmation
+      </input>
+      <input id="mantra" name="selection" type="radio" value="mantra">mantra
+      </input>
+      <br>
+      <br>
+      <button type="button">Recieve Message
+      </button>
+    </div>
+  </section>
+  <div class="result">
+    <img id="bell-image" src="assets/meditate.svg" alt="Ring Ring Ring!" width="100">
+    <figure class="view text-box hidden">'...'
+    </figure>
+    <button class="view clear hidden" type="button" id="clear"> Clear 😶‍🌫️</button>
+  </div>
+</body>
+<script type="text/javascript" src="main.js"></script>
+<script src="data.js"></script>
 </html>
