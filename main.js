@@ -37,7 +37,7 @@ function getInput() {
   }
 }
 
-  function clearBox() {
+function clearBox() {
   var toBeCleared = textbox.innerText
   alert(`"${toBeCleared}" has been cleared! Please make another selection.`)
   textbox.innerText = ``
