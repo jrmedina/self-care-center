@@ -7,15 +7,33 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-
 }
 
 .self-care {
-  display: flex;
-  padding: 30px;
-  justify-content: center;
+position: relative;
+-webkit-box-reflect: below -12px linear-gradient(transparent, rgba(0,0,0,0.2));
+text-align: center;
+filter: drop-shadow(0 0 0.74rem rgb(182, 182, 49)); */
+}
+.self-care span {
+  font-size: larger;
+  position: relative;
+  display: inline-block;
   color: white;
-  filter: drop-shadow(0 0 0.74rem rgb(182, 182, 49));
+  animation: animate 1s ease-in-out infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0px);
+  }
+  20% {
+    transform: translateY(-20px);
+  }
+  40%,100% {
+    transform: translateY(0px);
+  }
 }
 
 h2 {
